@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+	
+<head>
+ 
+ <title>Kenji Hirai's Final Project Survey</title>
+ <meta charset="utf-8" />
+ <meta name="description" content="This is survey form for Kenji's final project.">
+ <meta name="keywords" content="national park, grand canyon, zion, sedona, antelope canyon, amazing, beautiful" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />   
+ <link href="css/kj_reset.css" rel="stylesheet" />
+ <link href="css/kj_styles2.css" rel="stylesheet" />
+ <link href="css/kj_print.css" rel="stylesheet" media="print" />
+ <script src="scripts/kj_script.js"></script>  
+
+</head>
+
+<body>
+   <header>
+   	<div id="logoImage"> 
+    <img src="images/grandcanyon.png" alt=" "/>
+      <p>Kenji Hirai's Final Project!</p>
+    </div>
+   	
+       <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="kj_gallery.html">Table and Gallery</a></li>
+            <li><a href="kj_movie.html">Movie</a></li>
+            <li><a href="kj_survey.html">Survey</a></li>
+       </ul>
+      </nav>
+   </header>
+   
+   <article>
+      <h1>This is a survey form for Kenji's project.</h1>
+      <p>Thank you for visiting my homepage. I appreciate your comment for this website.</p>
+   </article>
+
+   <form id="survey">
+      	<fieldset>
+      		<legend>Please enter your information</legend>
+      		
+      		<div class="formRow">
+      		<label for="name">Name*</label>*
+      		<input name="name" id="name" type="text" placeholder="Enter your fullname" required />
+      		</div>
+      		
+      		<div class="formRow">
+      		<label for="street">Street address</label>
+      		<input name="street" id="street" type="text" />
+      		</div>
+      		
+      		<div class="formRow">
+      		<label for="city">City</label>
+      		<input name="city" id="city" type="text" />
+      		</div>
+      		
+      		<div class="formRow">
+      		<label for="state">State</label>
+      		<input name="state" id="state" type="text" />
+      		</div>
+      		
+      		<div class="formRow">
+      		<label for="zip">Postal code</label>
+      		<input name="zip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" />
+      		</div>
+      		
+      		<div class="formRow">
+      		<label for="phone">Phone number</label>
+      		<input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+      		</div>
+      		
+      		<div class="formRow">
+      		<label for="mail">E-mail*</label>
+      		<input name="email" id="mail" type="email" required/>
+      		</div>
+      		
+      		<div class="formRow">
+      			<label for="info">How did you hear about this website?</label>
+      			<select name="infoSrc" id="info" size="4" multiple>
+      				<option value="media">Social Media</option>
+      				<option value="search">Search Engine</option>
+      				<option value="youtube">Youtube channel</option>
+      				<option value="friend">Friend</option>
+      				<option value="other">Other</option>
+      			</select>
+      		</div>
+      		
+      		<div class="formRow">
+      			<label for="parkSpin">How many times did you visit National parks?</label>
+      			<input name="nationalPark" id="parkSpin" type="number" value="1" step="1" min="0" max="100" />
+      		</div>
+      		
+      		<div class="formRow">
+      			<label for="visit">Where do you want to visit?</label>
+      			<select name="location" id="location">
+      				<option value="location1" selected>Grand Canyon</option>
+      				<option value="location2">Sedona</option>
+      				<option value="location3" >Zion National Park</option>
+      				<option value="location4">Antelope Canyon</option>
+      			</select>
+      		</div>
+
+      		<div class="formRow">
+      			<label>Did you enjoy this website?</label>
+      			<fieldset class="optGroup">
+      				<label for="fYes">Yes</label>
+      				<input name="enjoy" id="fYes" value="yes" type="radio" />
+      				<label for="fNo">No</label>
+      				<input name="enjoy" id="fNo" value="no" type="radio" />
+      			</fieldset>	
+      		</div>
+
+      			
+      				
+      		<div class="formRow">
+      			<label for="rangeBox">Please rate this website<br />(0=Worst; 10=Best)</label>
+      			0
+      			<input name="rating" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
+      			10
+      		</div>
+      		
+      		<label for="commBox">Please tell me more about your impression.</label>
+      		<textarea name="impression" id="commBox"> </textarea>
+      		
+      	</fieldset>
+      	
+      	<div id="buttons">
+      		<input type="submit" value="Submit My Survey" />
+      		<input type="reset" value="Cancel" />
+      	</div>
+      	
+      </form>
+   
